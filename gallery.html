@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Hotel Aurelia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="siteHeader" class="transparent">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18"/><path d="M20 8 L24 18 L34 20 L24 22 L20 32 L16 22 L6 20 L16 18 Z"/></svg>
+      <span class="logo-text">Hotel Aurelia</span>
+    </a>
+    <nav id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="booking.html" class="btn btn-outline-ivory">Book Now</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+  </div>
+</header>
+
+<div class="page-header">
+  <svg class="crest" viewBox="0 0 56 56"><circle cx="28" cy="28" r="24"/><path d="M28 10 L33 24 L47 28 L33 32 L28 46 L23 32 L9 28 L23 24 Z"/></svg>
+  <span class="breadcrumb"><a href="index.html">Home</a> &nbsp;/&nbsp; Gallery</span>
+  <h1>Gallery</h1>
+  <p class="lede">A look at the rooms, dining rooms, spa, and event spaces. Filter by department, or view all.</p>
+</div>
+
+<section style="padding-top:90px;">
+  <div class="wrap">
+    <div class="gallery-filters">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="rooms">Rooms</button>
+      <button data-filter="dining">Dining</button>
+      <button data-filter="spa">Spa</button>
+      <button data-filter="events">Events</button>
+      <button data-filter="exterior">Exterior</button>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item wide tall" data-category="exterior" data-title="The Façade" data-desc="Restored 1889 stonework on Piotrkowska, unchanged in outline since the original build.">
+        <div class="tile" style="background:linear-gradient(135deg,#16302A,#0B1D18);"><span class="tag">Exterior</span></div>
+        <svg viewBox="0 0 200 200"><rect x="40" y="30" width="120" height="140" stroke="#D9BC85" fill="none" stroke-width="0.6"/><line x1="40" y1="70" x2="160" y2="70" stroke="#D9BC85" stroke-width="0.6"/></svg>
+      </div>
+
+      <div class="gallery-item" data-category="rooms" data-title="Boulevard Room" data-desc="28m², a single tall window over the avenue, oak floors.">
+        <div class="tile" style="background:linear-gradient(135deg,#204338,#16302A);"><span class="tag">Rooms</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="dining" data-title="The Malinowa Room" data-desc="Two connected dining rooms beneath the restored ballroom ceiling.">
+        <div class="tile" style="background:linear-gradient(135deg,#5C2130,#3a1420);"><span class="tag">Dining</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="rooms" data-title="Deluxe Suite Bath" data-desc="Soaking tub by the window, original 1900s parquet in the adjoining room.">
+        <div class="tile" style="background:linear-gradient(135deg,#B6873F,#8a642c);"><span class="tag">Rooms</span></div>
+      </div>
+
+      <div class="gallery-item wide" data-category="events" data-title="The Malinowa Ballroom" data-desc="Seats 150 beneath the restored ceiling, with a balcony above.">
+        <div class="tile" style="background:linear-gradient(135deg,#0B1D18,#5C2130);"><span class="tag">Events</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="spa" data-title="Thermal Pool" data-desc="The old cellar, rebuilt around a heated indoor pool.">
+        <div class="tile" style="background:linear-gradient(135deg,#16302A,#204338);"><span class="tag">Spa</span></div>
+      </div>
+
+      <div class="gallery-item tall" data-category="rooms" data-title="The Aurelia Apartment" data-desc="Two floors joined by a narrow stair, a working fireplace, a corner balcony.">
+        <div class="tile" style="background:linear-gradient(135deg,#204338,#0B1D18);"><span class="tag">Rooms</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="dining" data-title="Grand Cellar Bar" data-desc="A long, mostly Central European wine list, in the same vaulted cellar as the spa entrance.">
+        <div class="tile" style="background:linear-gradient(135deg,#5C2130,#8a642c);"><span class="tag">Dining</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="spa" data-title="Treatment Room" data-desc="One of four rooms, booked for the hour with a single therapist.">
+        <div class="tile" style="background:linear-gradient(135deg,#8a642c,#B6873F);"><span class="tag">Spa</span></div>
+      </div>
+
+      <div class="gallery-item wide" data-category="exterior" data-title="Piotrkowska at Dusk" data-desc="The boulevard outside, unchanged in outline since the carriage-wheel era.">
+        <div class="tile" style="background:linear-gradient(135deg,#0B1D18,#204338);"><span class="tag">Exterior</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="dining" data-title="Aurelia Café" data-desc="Open before the front desk. Fresh pastry from 06:30.">
+        <div class="tile" style="background:linear-gradient(135deg,#B6873F,#5C2130);"><span class="tag">Dining</span></div>
+      </div>
+
+      <div class="gallery-item" data-category="events" data-title="The Garden Court" data-desc="An open-air courtyard for up to 80 guests, with a covered option.">
+        <div class="tile" style="background:linear-gradient(135deg,#204338,#5C2130);"><span class="tag">Events</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="cta-strip">
+  <div class="wrap">
+    <h2>Seen enough to pick a date?</h2>
+    <div class="cta-strip-actions">
+      <a href="booking.html" class="btn btn-outline-ivory">Check Availability</a>
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <svg class="lb-icon" viewBox="0 0 42 42"></svg>
+    <h3 class="lb-title"></h3>
+    <p class="lb-desc"></p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="logo-text">Hotel Aurelia</div>
+        <p>Piotrkowska 72, Łódź. Open without interruption since 1889.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Book Now</a>
+      </div>
+      <div class="foot-col">
+        <h4>Services</h4>
+        <a href="rooms.html">Rooms &amp; Suites</a>
+        <a href="dining.html">Dining</a>
+        <a href="spa.html">Spa &amp; Wellness</a>
+        <a href="events.html">Weddings &amp; Events</a>
+      </div>
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <p>reservations@aureliahotel.pl</p>
+        <p>+48 42 000 00 00</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Hotel Aurelia. Demo project — design &amp; build sample.</span>
+      <span>Design concept for portfolio purposes</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
